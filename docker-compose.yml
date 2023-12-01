@@ -8,7 +8,7 @@ services:
       - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
     volumes:
       - "~/home/andijaya/data-wd/docker/mongodb/db:/data/db"
-      # - "~/mnt/d/Documents/mongodb/mongodb-data:/data/db"
+      # - "~/mnt/d/Documents/mongodb/data:/data/db"
     networks:
       - mongodb_network
     ports:
@@ -31,7 +31,7 @@ services:
       - ME_CONFIG_BASICAUTH_PASSWORD=${ME_CONFIG_BASICAUTH_PASSWORD}
     volumes:
       - "/home/andijaya/data-wd/docker/mongodb/db"
-      # - "/mnt/d/Documents/mongodb/mongodb-data"
+      # - "/mnt/d/Documents/mongodb/data"
     depends_on:
       - mongodb
     networks:
